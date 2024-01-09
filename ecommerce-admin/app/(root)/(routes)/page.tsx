@@ -17,12 +17,7 @@ if (!isOpen){
 }
 },[isOpen,onOpen])
 
-  return (
-   <div className='p-4'>
-    Root page
-   </div>
-
-  );
+  return null;
 }
 
 export default SetupPage;
