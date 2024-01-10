@@ -5,7 +5,7 @@ import prismadb from "@/lib/prismadb";
 
 
 import { ColorsClient } from "./components/client";
-import { ColorsColumn } from "./components/columns";
+import { ColorColumn } from "./components/columns";
 
 
 const ColorsPage = async ({
@@ -23,7 +23,7 @@ const ColorsPage = async ({
         }
     });
 
-const formattedColors: ColorsColumn[] = colors.map ((item) => ({
+const formattedColors: ColorColumn[] = colors.map ((item) => ({
     id : item.id,
     name: item.name,
     value: item.value,
